@@ -17,9 +17,9 @@ class Main {
     sub[4] = 'u';
 
     char[] sub2 = new char[5];
-    sub2[0] = '\u2663';  // Club
-    sub2[1] = '\u2660';  // Spade
-    sub2[2] = '\u2665';  // Heart
+    sub2[0] = '\u5795';  // RUNIC LETTER V
+    sub2[1] = '\u9240';  // SYMBOL FOR CANCEL
+    sub2[2] = '\u1026';  // CYRILLIC CAPITAL LETTER DJE
     sub2[3] = '\u2666';  // Diamond
     sub2[4] = '\u2836';  // Bralle symbol
 
