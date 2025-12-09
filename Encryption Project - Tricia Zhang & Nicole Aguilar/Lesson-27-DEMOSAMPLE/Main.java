@@ -33,8 +33,8 @@ class Main {
     //idk why its not writing the encoded msg
 
     //caesar cipher
-    //String encodedMsg2 = encode(encodedMsg1);
-    //Input.writeFile("Encode2.txt",encodedMsg2);
+    String encodedMsg2 = encode(encodedMsg1);
+    Input.writeFile("Encode2.txt",encodedMsg2);
 
     //substitution
     //String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
@@ -71,25 +71,28 @@ class Main {
   //Level 2: Cipher shift by non-constant key of 2
   String encode(String txt){
     String bld="";
-    
-     
-    return bld;
-  }
-
-  
-  String decode(String txt){
-    String bld="";
-   
+      for(int x = 0; x < txt.length(); x++){
+        char ch = txt.charAt(x);
+        int ascii = (int)ch;
+        ch = (char)(ascii*(2*x));
+        bld+=ch;
+      }
     return bld;
   }
 
   // Level 3: Unicode substituion
   String subEncryption(String s, char[] sub, char[] sub2){
     String bld="";
-   
+    
     return bld;
   }
   
+  //decode
+  String decode(String txt){
+    String bld="";
+   
+    return bld;
+  }
   
   int randInt(int lower, int upper){
     int range = upper - lower;
