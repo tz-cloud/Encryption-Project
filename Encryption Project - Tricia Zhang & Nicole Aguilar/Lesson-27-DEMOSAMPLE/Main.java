@@ -34,7 +34,7 @@ class Main {
 
     //caesar cipher
     String encodedMsg2 = encode(encodedMsg1);
-    Input.writeFile("Encode2.txt",encodedMsg2);
+    Input.writeFile("Encode2.txt", encodedMsg2);
 
     //substitution
     //String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
@@ -83,7 +83,7 @@ class Main {
   // Level 3: Unicode substituion
   String subEncryption(String s, char[] sub, char[] sub2){
     String bld="";
-    
+
     return bld;
   }
   
