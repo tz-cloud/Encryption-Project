@@ -58,7 +58,7 @@ class Main {
   // Level 1: Swap every 3 characters
   String swap(String txt){
     String bld ="";
-      for(int x = 0; x < txt.length(); x++){
+      for(int x = 0; x < txt.length(); x+=3){
         String a = txt.substring(x, x+1);
         String b = txt.substring(x+2, x+3);
         String c = txt.substring(x+1, x+2);
