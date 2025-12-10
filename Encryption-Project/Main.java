@@ -74,7 +74,7 @@ class Main {
       for(int x = 0; x < txt.length(); x++){
         char ch = txt.charAt(x);
         int ascii = (int)ch;
-        ch = (char)(ascii*(2*x));
+        ch = (char)(ascii+(2*x));
         bld+=ch;
       }
     return bld;
