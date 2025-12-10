@@ -10,10 +10,10 @@ class Main {
     // This example we are substituting all lower case 
     // letters to another lower case letter.
     char[] sub = new char[5];
-    sub[0] = 'a';
-    sub[1] = 'e';
-    sub[2] = 'i';
-    sub[3] = 'o';
+    sub[0] = 'c';
+    sub[1] = 'w';
+    sub[2] = 'N';
+    sub[3] = '';
     sub[4] = 'u';
 
     char[] sub2 = new char[5];
