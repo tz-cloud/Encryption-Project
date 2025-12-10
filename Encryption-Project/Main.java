@@ -13,7 +13,7 @@ class Main {
     sub[0] = 'c';
     sub[1] = 'w';
     sub[2] = 'N';
-    sub[3] = '';
+    sub[3] = 'o';
     sub[4] = 'u';
 
     char[] sub2 = new char[5];
@@ -25,7 +25,7 @@ class Main {
 
     
     // Encoding message
-    String file = Input.readFile("test.txt");
+    String file = Input.readFile("Original.txt");
 
     //swap 
     String encodedMsg1 = swap(file);
