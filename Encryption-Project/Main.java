@@ -67,13 +67,19 @@ class Main {
   }
   
   
-  //Level 2: Cipher shift by non-constant key of 2
+  //Level 2: Cipher shift by non-constant key of 2 (up to 10)
   String cipher(String txt){
     String bld="";
       for(int x = 0; x < txt.length(); x++){
         char ch = txt.charAt(x);
         int ascii = (int)ch;
-        ch = (char)(ascii+(2*x));
+        for(int z = 0; z > 11; z+=2){
+          ch = (char)(ascii+(z));
+          if(z > 11){
+            z=0;
+            ch = (char)(ascii+(z));
+          }
+        }
         bld+=ch;
       }
     return bld;
