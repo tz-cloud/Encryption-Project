@@ -31,7 +31,6 @@ class Main {
     String encodedMsg1 = swap(file);
     Input.writeFile("Encode1.txt", encodedMsg1);
     
-
     //caesar cipher
     String encodedMsg2 = cipher(encodedMsg1);
     Input.writeFile("Encode2.txt", encodedMsg2);
@@ -81,9 +80,20 @@ class Main {
   }
 
   // Level 3: Unicode substituion
+  //sub is original and sub2 is change
   String subEncryption(String s, char[] sub, char[] sub2){
     String bld="";
-
+    char ch =' ';
+    int index = 0;
+    for(int x=0; x <= s.length()-1; x++){
+      ch = s.charAt(x);
+      index = indexOf(ch, sub);
+      if(index != -1){
+        bld += sub2[index];
+      }else{
+        bld+=ch;
+      }
+    }    
     return bld;
   }
   
@@ -98,5 +108,9 @@ class Main {
     int range = upper - lower;
     return (int)(Math.random()*range+lower);
   }
+
+    private int indexOf(char ch, char[] sub) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
 }
