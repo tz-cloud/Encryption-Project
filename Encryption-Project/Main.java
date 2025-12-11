@@ -75,7 +75,7 @@ class Main {
         int ascii = (int)ch;
         for(int z = 0; z > 11; z+=2){
           ch = (char)(ascii+(z));
-          if(z > 11){
+          if(z >= 10){
             z=0;
             ch = (char)(ascii+(z));
           }
