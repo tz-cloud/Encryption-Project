@@ -90,12 +90,12 @@ class Main {
   String subEncryption(String s, char[] sub, char[] sub2){
     String bld="";
     char ch =' ';
-    int index = 0;
+    int pos = 0;
     for(int x=0; x <= s.length()-1; x++){
       ch = s.charAt(x);
-      index = indexOf(ch, sub);
-      if(index != -1){
-        bld += sub2[index];
+      pos = indexOf(ch, sub);
+      if(pos != -1){
+        bld += sub2[pos];
       }else{
         bld+=ch;
       }
