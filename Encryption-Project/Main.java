@@ -70,20 +70,19 @@ class Main {
   //Level 2: Cipher shift by non-constant key of 2 (up to 10)
   String cipher(String txt){
     String bld="";
-      for(int x = 0; x < txt.length(); x++){
+    int shift = 2;
+      for (int x = 0; x < txt.length(); x++) {
         char ch = txt.charAt(x);
-        int ascii = (int)ch;
-        for(int z = 0; z > 11; z+=2){
-          ch = (char)(ascii+(z));
-          if(z >= 10){
-            z=0;
-            ch = (char)(ascii+(z));
-          }
+        ch = (char)(ch + shift);
+        bld += ch;
+
+        shift += 2;
+        if (shift > 10) {
+            shift = 2;
         }
-        bld+=ch;
-      }
+    }
     return bld;
-  }
+      }
 
   // Level 3: Unicode substituion
   //sub is original and sub2 is change
