@@ -41,16 +41,16 @@ class Main {
 
     
     // decoding message
-    String file2 = Input.readFile("Encode1.txt");
+    String file2 = Input.readFile("Encode3.txt");
     
-    String decodedMsg1 = decode1(file2);
-    Input.writeFile("Decode1.txt", decodedMsg1);
+    String decodedMsg3 = subEncryption(file2, sub2, sub);
+    Input.writeFile("Decode1.txt", decodedMsg3);
     
-    String decodedMsg2 = decode2(decodedMsg1);
+    String decodedMsg2 = decode2(decodedMsg3);
     Input.writeFile("Decode2.txt", decodedMsg2);
     
-    String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
-    Input.writeFile("Decode3.txt", decodedMsg3);
+    String decodedMsg1 = decode1(decodedMsg2);
+    Input.writeFile("Decode3.txt", decodedMsg1);
     
     
   }
@@ -105,7 +105,7 @@ class Main {
   
   //decode
 
-  String decode1(String txt){
+  String decode2(String txt){
     String bld ="";
       for(int x = txt.length()-3; x >= 0; x-=3){
         String a = txt.substring(x-1, x);
@@ -116,18 +116,17 @@ class Main {
     return bld;
   }
 
-  String decode2(String txt){
+  String decode1(String txt){
     String bld="";
     int shift = 10;
-      for (int x = 0; x < txt.length(); x++) {
+      for (int x = txt.length(); x < 0; x--) {
         char ch = txt.charAt(x);
         ch = (char)(ch + shift);
-        bld += ch;
-
         shift -= 2;
         if (shift < 2) {
             shift = 10;
         }
+        bld += ch;
     }
     return bld;
   }
