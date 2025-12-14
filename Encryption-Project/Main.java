@@ -18,10 +18,10 @@ class Main {
 
     char[] sub2 = new char[5];
     sub2[0] = '\u16A1';  // RUNIC LETTER V: ᚡ
-    sub2[1] = '\u2418';  // SYMBOL FOR CANCEL: ␘ 
-    sub2[2] = '\u0402';  // CYRILLIC CAPITAL LETTER DJE: Ђ
-    sub2[3] = '\u07AB';  // THAANA OOBOOFILI: 
-    sub2[4] = '\u0936';  // DEVANAGARI LETTER SHA: श
+    sub2[1] = '\u2418';  // RUNIC LETTER YR: ᚣ
+    sub2[2] = '\u0402';  // RUNIC LETTER W: ᚥ
+    sub2[3] = '\u07AB';  // RUNIC LETTER LONG-BRANCH-OSS O: ᚬ
+    sub2[4] = '\u0936';  // RUNIC LETTER X: ᛪ
 
     
     // Encoding message
