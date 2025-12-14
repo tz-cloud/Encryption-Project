@@ -46,11 +46,11 @@ class Main {
     String decodedMsg1 = decode1(file2);
     Input.writeFile("Decode1.txt", decodedMsg1);
     
-    //String decodedMsg2 = decode2(decodedMsg1);
-    //Input.writeFile("Decode2.txt", decodedMsg2);
+    String decodedMsg2 = decode2(decodedMsg1);
+    Input.writeFile("Decode2.txt", decodedMsg2);
     
-    //String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
-    //Input.writeFile("Decode3.txt", decodedMsg3);
+    String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
+    Input.writeFile("Decode3.txt", decodedMsg3);
     
     
   }
@@ -107,10 +107,10 @@ class Main {
 
   String decode1(String txt){
     String bld ="";
-      for(int x = txt.length(); x >= 0; x-=3){
+      for(int x = txt.length()-3; x >= 0; x-=3){
         String a = txt.substring(x-1, x);
         String b = txt.substring(x-3, x-2);
-        String c = txt.substring(x-2, x-1);
+        String c = txt.substring(x-2, x-3);
         bld += a + c + b;
       }
     return bld;
