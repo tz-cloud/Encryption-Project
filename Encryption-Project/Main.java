@@ -10,11 +10,11 @@ class Main {
     // This example we are substituting all lower case 
     // letters to another lower case letter.
     char[] sub = new char[5];
-    sub[0] = 'c';
-    sub[1] = 'w';
-    sub[2] = 'N';
-    sub[3] = 'o';
-    sub[4] = 'u';
+    sub[0] = 'q';
+    sub[1] = 'k';
+    sub[2] = 'i';
+    sub[3] = 'v';
+    sub[4] = '"';
 
     char[] sub2 = new char[5];
     sub2[0] = '\u16A1';  // RUNIC LETTER V: ᚡ
@@ -36,8 +36,8 @@ class Main {
     Input.writeFile("Encode2.txt", encodedMsg2);
 
     //substitution
-    //String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
-    //Input.writeFile("Encode3.txt",encodedMsg3);
+    String encodedMsg3 = subEncryption(encodedMsg2, sub, sub2);
+    Input.writeFile("Encode3.txt", encodedMsg3);
 
     
     // decoding message
