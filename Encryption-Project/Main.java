@@ -118,15 +118,16 @@ class Main {
 
   String decode2(String txt){
     String bld="";
-    int shift = 10;
-      for(int x = txt.length(); x < 0; x--){
+    int shift = 2;
+      for (int x = 0; x < txt.length(); x++) {
         char ch = txt.charAt(x);
         ch = (char)(ch - shift);
-        shift -= 2;
-        if (shift <= 2) {
-            shift = 10;
-        }
         bld += ch;
+
+        shift += 2;
+        if (shift > 10) {
+            shift = 2;
+        }
     }
     return bld;
   }
