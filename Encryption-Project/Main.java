@@ -107,10 +107,10 @@ class Main {
 
   String decode1(String txt){
     String bld ="";
-      for(int x = 0; x <= txt.length()-3; x+=3){
-        String a = txt.substring(x, x+1);
-        String b = txt.substring(x+2, x+3);
-        String c = txt.substring(x+1, x+2);
+      for(int x = txt.length(); x >= 0; x-=3){
+        String a = txt.substring(x-1, x);
+        String b = txt.substring(x-3, x-2);
+        String c = txt.substring(x-2, x-1);
         bld += a + c + b;
       }
     return bld;
