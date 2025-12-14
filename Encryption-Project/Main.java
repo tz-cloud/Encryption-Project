@@ -46,11 +46,11 @@ class Main {
     String decodedMsg1 = decode1(file2);
     Input.writeFile("Decode1.txt", decodedMsg1);
     
-    String decodedMsg2 = decode2(decodedMsg1);
-    Input.writeFile("Decode2.txt", decodedMsg2);
+    //String decodedMsg2 = decode2(decodedMsg1);
+    //Input.writeFile("Decode2.txt", decodedMsg2);
     
-    String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
-    Input.writeFile("Decode3.txt", decodedMsg3);
+    //String decodedMsg3 = subEncryption(decodedMsg2, sub2, sub);
+    //Input.writeFile("Decode3.txt", decodedMsg3);
     
     
   }
