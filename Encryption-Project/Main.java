@@ -18,10 +18,10 @@ class Main {
 
     char[] sub2 = new char[5];
     sub2[0] = '\u16A1';  // RUNIC LETTER V: ᚡ
-    sub2[1] = '\u2418';  // RUNIC LETTER YR: ᚣ
-    sub2[2] = '\u0402';  // RUNIC LETTER W: ᚥ
-    sub2[3] = '\u07AB';  // RUNIC LETTER LONG-BRANCH-OSS O: ᚬ
-    sub2[4] = '\u0936';  // RUNIC LETTER X: ᛪ
+    sub2[1] = '\u16A3';  // RUNIC LETTER YR: ᚣ
+    sub2[2] = '\u16A5';  // RUNIC LETTER W: ᚥ
+    sub2[3] = '\u16AC';  // RUNIC LETTER LONG-BRANCH-OSS O: ᚬ
+    sub2[4] = '\u16EA';  // RUNIC LETTER X: ᛪ
 
     
     // Encoding message
