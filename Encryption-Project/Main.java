@@ -92,7 +92,13 @@ class Main {
     int pos = 0;
     for(int x=0; x <= s.length()-1; x++){
       ch = s.charAt(x);
-      pos = indexOf(ch, sub);
+      pos = -1;
+
+      for(int i = 0; i < sub.length; i++) {
+            if (sub[i] == ch) {
+                pos = i;
+            }
+        }
 
       if(pos != -1){
         bld += sub2[pos];
