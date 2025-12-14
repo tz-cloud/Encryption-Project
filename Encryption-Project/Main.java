@@ -105,7 +105,7 @@ class Main {
   
   //decode
 
-  String decode2(String txt){
+  String decode1(String txt){
     String bld ="";
       for(int x = txt.length()-3; x >= 0; x-=3){
         String a = txt.substring(x-1, x);
@@ -116,14 +116,14 @@ class Main {
     return bld;
   }
 
-  String decode1(String txt){
+  String decode2(String txt){
     String bld="";
     int shift = 10;
-      for (int x = txt.length(); x < 0; x--) {
+      for(int x = txt.length(); x < 0; x--){
         char ch = txt.charAt(x);
-        ch = (char)(ch + shift);
+        ch = (char)(ch - shift);
         shift -= 2;
-        if (shift < 2) {
+        if (shift <= 2) {
             shift = 10;
         }
         bld += ch;
