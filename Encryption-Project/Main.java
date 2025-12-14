@@ -94,6 +94,7 @@ class Main {
       ch = s.charAt(x);
       pos = -1;
 
+      //indexOf isn't working, this is substitute
       for(int i = 0; i < sub.length; i++) {
             if (sub[i] == ch) {
                 pos = i;
