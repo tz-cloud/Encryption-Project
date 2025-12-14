@@ -93,6 +93,7 @@ class Main {
     for(int x=0; x <= s.length()-1; x++){
       ch = s.charAt(x);
       pos = indexOf(ch, sub);
+
       if(pos != -1){
         bld += sub2[pos];
       }else{
@@ -114,8 +115,14 @@ class Main {
     return (int)(Math.random()*range+lower);
   }
 
-    private int indexOf(char ch, char[] sub) {
-        throw new UnsupportedOperationException("Not supported yet.");
+  //indexOf is only for strings, this allows arrays to be included too
+  int indexOf(char target, char[] arr) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == target) {
+            return i;
+        }
     }
+    return -1;
 
+}
 }
