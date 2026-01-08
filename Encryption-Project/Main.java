@@ -90,7 +90,7 @@ class Main {
     String bld="";
     char ch =' ';
     int pos = 0;
-    for(int x=0; x <= s.length()-1; x++){
+    for(int x = 0; x <= s.length()-1; x++){
       ch = s.charAt(x);
       pos = -1;
 
